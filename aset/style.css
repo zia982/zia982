@@ -1,0 +1,99 @@
+/*Reset dasar*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/*Background utama dengan gradient*/
+body{
+    background: linear-gradient(to right,#cdcdcd,#92111c);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+/*Judul*/
+h1{
+    color: #333333;
+    margin-bottom: 20px;
+    font-size:24px;
+    font-weight:bold;
+}
+/*Form input*/
+.form-container{
+    background: white;
+    padding: 15px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    display:flex;
+    gap: 10px;
+    width:90%;
+    max-width: 700px;
+}
+
+input,select{
+    padding:10px;
+    border:2px solid #ddd;
+    border-radius:5px;
+    font-size:14px;
+    width:100%;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/*Tombol Tambah*/
+button[name="add_tasks"]{
+    background: #28a745;
+    color:white:#28a745
+    transition:0.3s;
+}
+button[name="add_tasks"]:hover{
+    background:#218838;
+}
+/*Daftar tugas*/
+.tasks-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+    margin-top:20px;
+    width:90%;
+}
+/*Kartu tugas*/
+.tasks-item{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    min-width: 250px;
+    max-width:300px;
+    texe-align:center;
+}
+
+/*Tombol Edit*/
+button[name="edit_tasks"]{
+    background:#28a745
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[name="edit_tasks"]:hover{
+    background:#218838;
+}
+
+/*Tombol Hapus*/
+button.delete{
+    background:#dc3545
+    color:white;
+}
